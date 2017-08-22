@@ -48,7 +48,7 @@ class List extends Component {
                         <Link to={{ 
                           pathname: `/detail/${ index }`,
                           state: { item: item }
-                        }}>Fly me to the Mars~</Link>
+                        }} style={ whiteText }>Fly me to the Mars~</Link>
                       </a>
                     </div>
                   </div>
@@ -71,6 +71,10 @@ const cardStyle = {
 const cardImageStyle = {
   maxHeight: '150px',
   maxWidth: '300px'
+}
+
+const whiteText = {
+  color: 'white'
 }
 
 export default List;

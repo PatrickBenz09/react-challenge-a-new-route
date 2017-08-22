@@ -23,7 +23,7 @@ class Detail extends Component {
               <a className="btn btn-primary">
                 <Link to={{ 
                   pathname: `/`,
-                }}>Back~</Link>
+                }} style={ whiteText }>Back~</Link>
               </a>
             </div>
           </div>
@@ -34,14 +34,17 @@ class Detail extends Component {
 }
 
 const cardStyle = {
-  height: '350px',
-  width: '300px',
-  margin: '15px'
+  height: '300px',
+  maxWidth: '400px'
 }
 
 const cardImageStyle = {
-  maxHeight: '150px',
-  maxWidth: '300px'
+  height: '300px',
+  maxWidth: '800px'
+}
+
+const whiteText = {
+  color: 'white'
 }
 
 export default Detail
