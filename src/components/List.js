@@ -19,7 +19,7 @@ class List extends Component {
     .then(resp => {
       let roverPhotos = resp.data.photos
       roverPhotos = roverPhotos.slice(3,24)
-      console.log(roverPhotos);
+      // console.log(roverPhotos);
       self.setState({
         NasaData: roverPhotos
       })
@@ -28,7 +28,7 @@ class List extends Component {
   }
 
   componentDidMount() {
-    console.log('hay');
+    console.log('Sudah Mounted');
     this.getNasa()
   }
   
